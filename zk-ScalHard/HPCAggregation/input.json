@@ -1,0 +1,6 @@
+{
+  "hpc_puf_witness": "987654321",
+  "zonal_roots": ["111", "222", "333", "444"],
+  "public_vehicle_id": "1",
+  "public_global_root": "1"
+}
