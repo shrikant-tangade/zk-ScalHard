@@ -33,9 +33,7 @@ snarkjs zkey export verificationkey zonal_final.zkey verification_key.json
 node ZonalIntegrity_js/generate_witness.js ZonalIntegrity_js/ZonalIntegrity.wasm input.json witness.wtns
 snarkjs groth16 prove zonal_final.zkey witness.wtns proof.json public.json
 snarkjs groth16 verify verification_key.json public.json proof.json
-
-
-
+```
 ### Tier-2: HPC Aggregation (HPCA)
 Navigate to the HPCAggregation folder and run:
 ```bash
@@ -49,14 +47,11 @@ snarkjs zkey export verificationkey hpc_final.zkey hpc_verification_key.json
 node HPC_Aggregator_js/generate_witness.js HPC_Aggregator_js/HPC_Aggregator.wasm input.json hpc_witness.wtns
 snarkjs groth16 prove hpc_final.zkey hpc_witness.wtns hpc_proof.json hpc_public.json
 snarkjs groth16 verify hpc_verification_key.json hpc_public.json hpc_proof.json
+```
 
-4. Reproducing Figures
+## 4. Reproducing Figures
 Navigate to the Figures folder and execute the scripts to generate the paper's results:
 
 python3 final_bandwidth_graph.py           # Reproduces Figure 3
 python3 final_verification_latency_100.py  # Reproduces Figure 4
 python3 temporal_isolation.py              # Reproduces Figure 5
-
-
-
-4. Reproducing Figures
